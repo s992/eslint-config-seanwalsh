@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-seanwalsh",
+  "version": "0.0.0-semantically-released",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "repository": {
+    "url": "https://github.com/s992/eslint-config-seanwalsh",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/s992/eslint-config-seanwalsh/issues"
+  },
+  "homepage": "https://github.com/s992/eslint-config-seanwalsh#readme",
+  "author": "Sean Walsh <sean.walsh87+npm@gmail.com> (http://swalsh.org/)",
+  "license": "MIT",
+  "scripts": {
+  	"commit": "git-cz",
+    "lint": "eslint .",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.1.0",
+    "eslint-plugin-babel": "^3.3.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
+    "eslint": "^3.9.0",
+    "semantic-release": "^4.3.5"
+  },
+  "peerDependencies": {
+    "eslint": "^3.9.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
