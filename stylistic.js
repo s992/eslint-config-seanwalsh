@@ -34,9 +34,11 @@ module.exports = {
 				after: false,
 				before: true,
 				overrides: {
+					const: { after: true },
 					else: { after: true },
 					from: { after: true },
 					import: { after: true },
+					let: { after: true },
 					return: { after: true },
 				},
 			},
